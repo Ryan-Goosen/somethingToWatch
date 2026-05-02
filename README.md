@@ -1,123 +1,84 @@
 # Something To Watch
 
----
-
-## 📛 **Project Identity**
-
-**Name:** Something To Watch  
-**Project ID:** PRJ-2026-001  
-**Owner:** Ryan  
-**Date Created:** 2026/01/15  
-**Last Updated:** 2026/01/16
+> Get notified of the latest sports matches directly from your terminal.
 
 ---
 
-## 🎯 **Vision & Purpose**
+## About
 
-**Elevator Pitch:**  
-Get notified of the latest sport matches directly from you terminal.
+### What it does
+A terminal application that tells you when there's a sports match happening. Currently supports F1 races; football integration is planned.
 
-**Long-Term Vision:**  
-A terminal script people can use to find out if there favorites team is currently playing or when there next match is. If the match still needs to happen an alarm / notification is set for 10min before the match to remind you or even live updates from the terminal.
+### Why I built it
+I kept forgetting when my football team plays games, so I decided to make this terminal application to notify me whenever there's a match.
 
-**Success Metrics:**
+### Who it's for
+Sports fans who want quick terminal-based notifications about upcoming matches without checking multiple apps or websites.
 
-- [ ] I can check for football matches
-- [ ] I can check for F1 races
-- [ ] An alarm is set when the race is in the future
-- [ ] Gets live updates
+**Note:** This project is currently on hold — only the F1 section is functional.
 
 ---
 
-## ⚙️ **Tech Stack**
+## Built With
 
-| Category | Tools/Languages |
-| --- | --- |
-| **Core Language** | Python |
-| **Framework** | N/A |
+| Category | Tool |
+| -------- | ---- |
+| **Language** | Python |
+| **Framework** | None (CLI App) |
 | **Libraries** | requests |
-| **Tools/IDE** | VS Codium |
-| **Version Control** | [GitHub Repo Link](https://codeberg.org/Ryan-Goosen/somethingToWatch) |
 
 ---
 
-## 📊 **Current State**
+## Getting Started
 
-**Progress:** 0% _(Visual: 0️⃣)_  
-**Phase:** Planning  
-**Recent Wins:**
+### Prerequisites
 
-- [ ] N/A
+- Python 3.13+
+- uv
 
-**Blockers:**
+### Installation
 
-- [ ] N/A
+1. Clone the repo:
+```bash
+git clone https://codeberg.org/Ryan-Goosen/somethingToWatch.git
+```
 
----
+2. Navigate into the project:
+```bash
+cd somethingToWatch
+```
 
-## 🗺️ **Roadmap**
+3. Setup environment:
+```bash
+uv venv
+uv pip install -e .
+```
 
-### **Main Objectives** _(High-level milestones)_
-
-1.  **Setup** _(Target: 2026/01/18)_
-    - [ ] Get football date data  
-    - [ ] Get F1 race date data
-
-2.  **Core** _(Target: 2026/01/19)_
-    - [ ] Be able to tell if a match is happening today / this week
-    - [ ] Be able to tell if a match has happend this week
-    - [ ] Be able to create an alarm for an up comming match
-    - [ ] Return scores if the match happend in the recently
-    
-3.  **Polish** _(Target: 2026/01/22)_
-    - [ ] Have a pretty looking TUI
-    - [ ] Make the setting customizeable
-
-4. **Testing** _(Target: -/-/-)_
-    - [ ] Never happening 😀
-
-### **Immediate Next Steps** _(<3 tasks for quick re-entry)_
-
-1.  Get an free API that does requere auth
-2.  Start with **Step 1**
-
----
-
-## 📂 **Project Structure**
-
-```markdown
-/src  
-├── settings/      # Contains the settings file for the users  
-├── data/          # Contains the logic that makes the API calls  
-└── __tests__/     # Unit Tests 😭  
+4. Run the project:
+```bash
+python3 main.py
 ```
 
 ---
 
-## 📝 **Notes & Decisions**
+## Usage
 
-**Key Choices:**
+Currently supports F1 race date checking:
 
-- ?
+```bash
+python3 main.py
+```
 
-**Backlog/Ideas:**
-
-- ?
-
-**Debug Log:**
-
-- ?
+Football support coming in a future update.
 
 ---
 
-## 🖼️ **Visuals** _(Optional)_
+## License
 
-**Mock-ups/Screenshots:**  
-
-NONE
+Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 ---
 
-### **Why This Works?**
+## Acknowledgments
 
-N/A
+- [OpenF1 API](https://openf1.org/) for F1 race data
